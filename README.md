@@ -1,4 +1,6 @@
 # MERN Docker Compose Demo
 
 - To run this application: 
-- docker-compose up
+```bash
+docker-compose up
+```
