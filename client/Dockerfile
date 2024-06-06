@@ -2,12 +2,12 @@ FROM node:14-slim
 
 WORKDIR /usr/src/app
 
-COPY ./package.json ./
-COPY ./yarn.lock ./
+COPY ./package.json /usr/src/app/
+COPY ./yarn.lock /usr/src/app/
 
 RUN yarn install
 
-COPY . .
+COPY . /usr/src/app/
 
 EXPOSE 3000
 
